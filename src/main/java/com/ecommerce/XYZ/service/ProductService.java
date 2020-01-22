@@ -45,6 +45,7 @@ public class ProductService {
 		
         Query query = em.createQuery(customQuery.toString());
         List<Product> prodcuts =(List<Product>)query.getResultList();
+        
         em.close();
 		return prodcuts;
 	}
